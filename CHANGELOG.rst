@@ -2,12 +2,12 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.1.1 (2024-07-15)
+0.0.4 (2024-07-15)
 ------------------
 * Update vendored package version to 8.5.0
 * Contributors: Addisu Z. Taddese
 
-0.1.0 (2024-04-23)
+0.0.3 (2024-04-25)
 ------------------
 * Use an alias target for root library
 * Contributors: Addisu Z. Taddese
