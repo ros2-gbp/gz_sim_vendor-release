@@ -4,7 +4,7 @@ project(gz_sim_vendor)
 
 # Project-specific settings
 set(LIB_VER_MAJOR 8)
-set(LIB_VER_MINOR 5)
+set(LIB_VER_MINOR 6)
 set(LIB_VER_PATCH 0)
 
 # Derived variables
