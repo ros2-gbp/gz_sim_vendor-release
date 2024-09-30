@@ -10,9 +10,9 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.0.5</version>
+  <version>0.2.0</version>
   <description>
-    Vendor package for: gz-sim8 8.6.0
+    Vendor package for: gz-sim9 9.0.0
 
     Gazebo Sim : A Robotic Simulator
   </description>
@@ -82,7 +82,7 @@
   <depend>sdformat_vendor</depend>
 
   <!-- Depend on the package we are vendoring to allow building it from source -->
-  <depend condition="$GZ_BUILD_FROM_SOURCE != ''">gz-sim8</depend>
+  <depend condition="$GZ_BUILD_FROM_SOURCE != ''">gz-sim9</depend>
 
   <test_depend>ament_cmake_copyright</test_depend>
   <test_depend>ament_cmake_lint_cmake</test_depend>
