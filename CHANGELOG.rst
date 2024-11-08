@@ -2,27 +2,22 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.2.0 (2024-09-30)
+0.0.6 (2024-11-08)
 ------------------
-* Bump version to 9.0.0 (`#5 <https://github.com/gazebo-release/gz_sim_vendor/issues/5>`_)
-* Apply prerelease suffix (`#4 <https://github.com/gazebo-release/gz_sim_vendor/issues/4>`_)
-  * Apply prerelease suffix
-  * Drop BUILD_DOCS
-  ---------
-* Upgrade to Ionic
-* Contributors: Addisu Z. Taddese, Ian Chen
+* Bump version to 8.7.0
+* Contributors: Addisu Z. Taddese
 
-0.1.2 (2024-08-08)
+0.0.5 (2024-08-08)
 ------------------
 * Update vendored package version to 8.6.0
 * Contributors: Addisu Z. Taddese
 
-0.1.1 (2024-07-15)
+0.0.4 (2024-07-15)
 ------------------
 * Update vendored package version to 8.5.0
 * Contributors: Addisu Z. Taddese
 
-0.1.0 (2024-04-23)
+0.0.3 (2024-04-25)
 ------------------
 * Use an alias target for root library
 * Contributors: Addisu Z. Taddese
