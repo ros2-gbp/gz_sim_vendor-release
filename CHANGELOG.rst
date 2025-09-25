@@ -2,9 +2,19 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.2.2 (2025-09-24)
+0.4.1 (2025-09-25)
 ------------------
-* Bump version to 9.4.0 (`#15 <https://github.com/gazebo-release/gz_sim_vendor/issues/15>`_)
+* Bump version to 10.0.0-pre2 (`#18 <https://github.com/gazebo-release/gz_sim_vendor/issues/18>`_)
+* Contributors: Addisu Z. Taddese
+
+0.4.0 (2025-09-08)
+------------------
+* Jetty support: 10.0.0-pre1 (`#14 <https://github.com/gazebo-release/gz_sim_vendor/issues/14>`_)
+* Contributors: Steve Peters
+
+0.3.0 (2025-09-04)
+------------------
+* Bump version to 9.3.0 (`#13 <https://github.com/gazebo-release/gz_sim_vendor/issues/13>`_)
 * Contributors: Ian Chen
 
 0.2.1 (2025-02-19)
