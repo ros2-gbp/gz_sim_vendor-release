@@ -10,7 +10,7 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.4.0</version>
+  <version>0.4.1</version>
   <description>
     Vendor package for: gz-sim 10.0.0
 
@@ -26,9 +26,13 @@
 
   <buildtool_depend>cmake</buildtool_depend>
   <build_depend>benchmark</build_depend>
+  <build_depend>binutils</build_depend>
   <build_depend>glut</build_depend>
+  <build_depend>libdw-dev</build_depend>
+  <build_depend>libdwarf-dev</build_depend>
   <build_depend>libfreeimage-dev</build_depend>
   <build_depend>libglew-dev</build_depend>
+  <build_depend>libwebsockets-dev</build_depend>
   <build_depend>libxi-dev</build_depend>
   <build_depend>libxmu-dev</build_depend>
   <build_depend>protobuf-dev</build_depend>
@@ -47,9 +51,13 @@
   <build_depend>tinyxml2</build_depend>
   <build_depend>uuid</build_depend>
   <exec_depend>benchmark</exec_depend>
+  <exec_depend>binutils</exec_depend>
   <exec_depend>glut</exec_depend>
+  <exec_depend>libdw-dev</exec_depend>
+  <exec_depend>libdwarf-dev</exec_depend>
   <exec_depend>libfreeimage-dev</exec_depend>
   <exec_depend>libglew-dev</exec_depend>
+  <exec_depend>libwebsockets-dev</exec_depend>
   <exec_depend>libxi-dev</exec_depend>
   <exec_depend>libxmu-dev</exec_depend>
   <exec_depend>protobuf-dev</exec_depend>
