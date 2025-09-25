@@ -10,9 +10,9 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.4.0</version>
+  <version>0.2.2</version>
   <description>
-    Vendor package for: gz-sim 10.0.0
+    Vendor package for: gz-sim9 9.4.0
 
     Gazebo Sim : A Robotic Simulator
   </description>
@@ -33,17 +33,16 @@
   <build_depend>libxmu-dev</build_depend>
   <build_depend>protobuf-dev</build_depend>
   <build_depend>pybind11-dev</build_depend>
-  <build_depend>qml6-module-qt-labs-folderlistmodel</build_depend>
-  <build_depend>qml6-module-qt-labs-settings</build_depend>
-  <build_depend>qml6-module-qt5compat-graphicaleffects</build_depend>
-  <build_depend>qml6-module-qtquick-controls</build_depend>
-  <build_depend>qml6-module-qtquick-dialogs</build_depend>
-  <build_depend>qml6-module-qtquick-layouts</build_depend>
-  <build_depend>qml6-module-qtquick</build_depend>
-  <build_depend>qt6-5compat-dev</build_depend>
-  <build_depend>qt6-base-dev</build_depend>
-  <build_depend>qt6-base-private-dev</build_depend>
-  <build_depend>qt6-declarative-dev</build_depend>
+  <build_depend>qml-module-qt-labs-folderlistmodel</build_depend>
+  <build_depend>qml-module-qt-labs-settings</build_depend>
+  <build_depend>qml-module-qtgraphicaleffects</build_depend>
+  <build_depend>qml-module-qtquick-controls2</build_depend>
+  <build_depend>qml-module-qtquick-controls</build_depend>
+  <build_depend>qml-module-qtquick-dialogs</build_depend>
+  <build_depend>qml-module-qtquick-layouts</build_depend>
+  <build_depend>qml-module-qtquick2</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>qtdeclarative5-dev</build_depend>
   <build_depend>tinyxml2</build_depend>
   <build_depend>uuid</build_depend>
   <exec_depend>benchmark</exec_depend>
@@ -54,17 +53,16 @@
   <exec_depend>libxmu-dev</exec_depend>
   <exec_depend>protobuf-dev</exec_depend>
   <exec_depend>pybind11-dev</exec_depend>
-  <exec_depend>qml6-module-qt-labs-folderlistmodel</exec_depend>
-  <exec_depend>qml6-module-qt-labs-settings</exec_depend>
-  <exec_depend>qml6-module-qt5compat-graphicaleffects</exec_depend>
-  <exec_depend>qml6-module-qtquick-controls</exec_depend>
-  <exec_depend>qml6-module-qtquick-dialogs</exec_depend>
-  <exec_depend>qml6-module-qtquick-layouts</exec_depend>
-  <exec_depend>qml6-module-qtquick</exec_depend>
-  <exec_depend>qt6-5compat-dev</exec_depend>
-  <exec_depend>qt6-base-dev</exec_depend>
-  <exec_depend>qt6-base-private-dev</exec_depend>
-  <exec_depend>qt6-declarative-dev</exec_depend>
+  <exec_depend>qml-module-qt-labs-folderlistmodel</exec_depend>
+  <exec_depend>qml-module-qt-labs-settings</exec_depend>
+  <exec_depend>qml-module-qtgraphicaleffects</exec_depend>
+  <exec_depend>qml-module-qtquick-controls2</exec_depend>
+  <exec_depend>qml-module-qtquick-controls</exec_depend>
+  <exec_depend>qml-module-qtquick-dialogs</exec_depend>
+  <exec_depend>qml-module-qtquick-layouts</exec_depend>
+  <exec_depend>qml-module-qtquick2</exec_depend>
+  <exec_depend>qtbase5-dev</exec_depend>
+  <exec_depend>qtdeclarative5-dev</exec_depend>
   <exec_depend>tinyxml2</exec_depend>
   <exec_depend>uuid</exec_depend>
   <test_depend>xvfb</test_depend>
@@ -85,7 +83,7 @@
   <depend>sdformat_vendor</depend>
 
   <!-- Depend on the package we are vendoring to allow building it from source -->
-  <depend condition="$GZ_BUILD_FROM_SOURCE != ''">gz-sim</depend>
+  <depend condition="$GZ_BUILD_FROM_SOURCE != ''">gz-sim9</depend>
 
   <test_depend>ament_cmake_copyright</test_depend>
   <test_depend>ament_cmake_lint_cmake</test_depend>
