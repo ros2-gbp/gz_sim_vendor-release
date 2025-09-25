@@ -1,0 +1,12 @@
+Source: ros-kilted-gz-sim-vendor
+Section: misc
+Priority: optional
+Maintainer: Addisu Z. Taddese <addisuzt@intrinsic.ai>
+Build-Depends: debhelper (>= 9.0.0), cmake, freeglut3-dev, libbenchmark-dev, libfreeimage-dev, libglew-dev, libprotobuf-dev, libprotoc-dev, libtinyxml2-dev, libxi-dev, libxmu-dev, protobuf-compiler, pybind11-dev, python3-pytest <!nocheck>, qml-module-qt-labs-folderlistmodel, qml-module-qt-labs-settings, qml-module-qtgraphicaleffects, qml-module-qtquick-controls, qml-module-qtquick-controls2, qml-module-qtquick-dialogs, qml-module-qtquick-layouts, qml-module-qtquick2, qtbase5-dev, qtdeclarative5-dev, ros-kilted-ament-cmake-copyright <!nocheck>, ros-kilted-ament-cmake-core, ros-kilted-ament-cmake-lint-cmake <!nocheck>, ros-kilted-ament-cmake-test, ros-kilted-ament-cmake-vendor-package, ros-kilted-ament-cmake-xmllint <!nocheck>, ros-kilted-gz-cmake-vendor, ros-kilted-gz-common-vendor, ros-kilted-gz-fuel-tools-vendor, ros-kilted-gz-gui-vendor, ros-kilted-gz-math-vendor, ros-kilted-gz-msgs-vendor, ros-kilted-gz-physics-vendor, ros-kilted-gz-plugin-vendor, ros-kilted-gz-rendering-vendor, ros-kilted-gz-sensors-vendor, ros-kilted-gz-tools-vendor, ros-kilted-gz-transport-vendor, ros-kilted-gz-utils-vendor, ros-kilted-sdformat-vendor, uuid-dev, xvfb <!nocheck>, ros-kilted-ros-workspace
+Homepage: https://github.com/gazebosim/gz-sim
+Standards-Version: 3.9.2
+
+Package: ros-kilted-gz-sim-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, freeglut3-dev, libbenchmark-dev, libfreeimage-dev, libglew-dev, libprotobuf-dev, libprotoc-dev, libtinyxml2-dev, libxi-dev, libxmu-dev, protobuf-compiler, pybind11-dev, qml-module-qt-labs-folderlistmodel, qml-module-qt-labs-settings, qml-module-qtgraphicaleffects, qml-module-qtquick-controls, qml-module-qtquick-controls2, qml-module-qtquick-dialogs, qml-module-qtquick-layouts, qml-module-qtquick2, qtbase5-dev, qtdeclarative5-dev, ros-kilted-gz-cmake-vendor, ros-kilted-gz-common-vendor, ros-kilted-gz-fuel-tools-vendor, ros-kilted-gz-gui-vendor, ros-kilted-gz-math-vendor, ros-kilted-gz-msgs-vendor, ros-kilted-gz-physics-vendor, ros-kilted-gz-plugin-vendor, ros-kilted-gz-rendering-vendor, ros-kilted-gz-sensors-vendor, ros-kilted-gz-tools-vendor, ros-kilted-gz-transport-vendor, ros-kilted-gz-utils-vendor, ros-kilted-sdformat-vendor, uuid-dev, ros-kilted-ros-workspace
+Description: Vendor package for: gz-sim9 9.4.0 Gazebo Sim : A Robotic Simulator
