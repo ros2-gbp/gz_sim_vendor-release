@@ -2,30 +2,14 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.2 (2025-10-01)
+0.2.3 (2025-10-24)
 ------------------
-* Merge pull request `#19 <https://github.com/gazebo-release/gz_sim_vendor/issues/19>`_ from gazebo-release/releasepy/rolling/10.0.0
-  Bump version to 10.0.0
-* Bump version to 10.0.0
-* Set PYTHONPATH for Jetty packages (`#17 <https://github.com/gazebo-release/gz_sim_vendor/issues/17>`_)
-  * Set PYTHONPATH for unversioned packages
-  * Set PYTHONPATH from separate dsv file
-  ---------
-* Contributors: Carlos Agüero, Jose Luis Rivero, Steve Peters
-
-0.4.1 (2025-09-25)
-------------------
-* Bump version to 10.0.0-pre2 (`#18 <https://github.com/gazebo-release/gz_sim_vendor/issues/18>`_)
+* Bump version to 9.5.0 (`#20 <https://github.com/gazebo-release/gz_sim_vendor/issues/20>`_)
 * Contributors: Addisu Z. Taddese
 
-0.4.0 (2025-09-08)
+0.2.2 (2025-09-24)
 ------------------
-* Jetty support: 10.0.0-pre1 (`#14 <https://github.com/gazebo-release/gz_sim_vendor/issues/14>`_)
-* Contributors: Steve Peters
-
-0.3.0 (2025-09-04)
-------------------
-* Bump version to 9.3.0 (`#13 <https://github.com/gazebo-release/gz_sim_vendor/issues/13>`_)
+* Bump version to 9.4.0 (`#15 <https://github.com/gazebo-release/gz_sim_vendor/issues/15>`_)
 * Contributors: Ian Chen
 
 0.2.1 (2025-02-19)
