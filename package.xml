@@ -10,9 +10,9 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.0.8</version>
+  <version>0.0.9</version>
   <description>
-    Vendor package for: gz-sim8 8.9.0
+    Vendor package for: gz-sim8 8.10.0
 
     Gazebo Sim : A Robotic Simulator
   </description>
