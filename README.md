@@ -1,3 +1,26 @@
+## gz_sim_vendor (jazzy) - 0.0.9-1
+
+The packages in the `gz_sim_vendor` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy gz_sim_vendor` on `Fri, 24 Oct 2025 17:56:13 -0000`
+
+The `gz_sim_vendor` package was released.
+
+Version of package(s) in repository `gz_sim_vendor`:
+
+- upstream repository: https://github.com/gazebo-release/gz_sim_vendor.git
+- release repository: https://github.com/ros2-gbp/gz_sim_vendor-release.git
+- rosdistro version: `0.0.8-1`
+- old version: `0.0.8-1`
+- new version: `0.0.9-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## gz_sim_vendor (kilted) - 0.2.3-1
 
 The packages in the `gz_sim_vendor` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --rosdistro kilted gz_sim_vendor` on `Fri, 24 Oct 2025 17:54:24 -0000`
