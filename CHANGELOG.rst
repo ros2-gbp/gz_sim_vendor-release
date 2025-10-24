@@ -2,6 +2,11 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.3 (2025-10-24)
+------------------
+* Bump version to 9.5.0 (`#20 <https://github.com/gazebo-release/gz_sim_vendor/issues/20>`_)
+* Contributors: Addisu Z. Taddese
+
 0.2.2 (2025-09-24)
 ------------------
 * Bump version to 9.4.0 (`#15 <https://github.com/gazebo-release/gz_sim_vendor/issues/15>`_)
