@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.10)
 project(gz_sim_vendor)
 
 # Project-specific settings
-set(LIB_VER_MAJOR 9)
-set(LIB_VER_MINOR 5)
+set(LIB_VER_MAJOR 8)
+set(LIB_VER_MINOR 10)
 set(LIB_VER_PATCH 0)
 set(LIB_VER_SUFFIX "")
 
@@ -13,7 +13,7 @@ set(LIB_NAME gz-sim)
 set(GITHUB_NAME gz-sim)
 string(REPLACE "-" "_" LIB_NAME_UNDERSCORE ${LIB_NAME})
 set(LIB_NAME_COMP_PREFIX ${LIB_NAME})
-set(LIB_NAME_FULL gz-sim9)
+set(LIB_NAME_FULL gz-sim8)
 set(LIB_VER ${LIB_VER_MAJOR}.${LIB_VER_MINOR}.${LIB_VER_PATCH})
 
 option(VENDOR_FROM_LIB_VCS_REF
@@ -66,6 +66,7 @@ ament_vendor(${LIB_NAME_UNDERSCORE}_vendor
   VCS_URL https://github.com/gazebosim/${GITHUB_NAME}.git
   VCS_VERSION ${LIB_VCS_VER}
   CMAKE_ARGS
+    -DBUILD_DOCS:BOOL=OFF
     -DSKIP_PYBIND11:BOOL=ON
   GLOBAL_HOOK
 )
