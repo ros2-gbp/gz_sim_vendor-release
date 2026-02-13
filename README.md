@@ -1,3 +1,26 @@
+## gz_sim_vendor (rolling) - 0.4.4-1
+
+The packages in the `gz_sim_vendor` repository were released into the `rolling` distro by running `/Users/addisuzt/ws/gz_vendor_pkgs/vendor_pkgs/.venv/bin/bloom-release --rosdistro rolling gz_sim_vendor -y` on `Fri, 13 Feb 2026 17:37:50 -0000`
+
+The `gz_sim_vendor` package was released.
+
+Version of package(s) in repository `gz_sim_vendor`:
+
+- upstream repository: https://github.com/gazebo-release/gz_sim_vendor.git
+- release repository: https://github.com/ros2-gbp/gz_sim_vendor-release.git
+- rosdistro version: `0.4.3-1`
+- old version: `0.4.3-1`
+- new version: `0.4.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## gz_sim_vendor (rolling) - 0.4.3-1
 
 The packages in the `gz_sim_vendor` repository were released into the `rolling` distro by running `/Users/addisuzt/ws/gz_vendor_pkgs/vendor_pkgs/.venv/bin/bloom-release --rosdistro rolling gz_sim_vendor` on `Thu, 22 Jan 2026 16:47:24 -0000`
