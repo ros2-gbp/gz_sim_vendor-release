@@ -2,68 +2,45 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.4 (2026-02-13)
-------------------
-* Bump version to 10.1.1 (`#23 <https://github.com/gazebo-release/gz_sim_vendor/issues/23>`_)
-* Contributors: Ian Chen
-
-0.4.3 (2026-01-22)
-------------------
-* Bump version to 10.1.0 (`#22 <https://github.com/gazebo-release/gz_sim_vendor/issues/22>`_)
-* Contributors: Ian Chen
-
-0.4.2 (2025-10-01)
-------------------
-* Merge pull request `#19 <https://github.com/gazebo-release/gz_sim_vendor/issues/19>`_ from gazebo-release/releasepy/rolling/10.0.0
-  Bump version to 10.0.0
-* Bump version to 10.0.0
-* Set PYTHONPATH for Jetty packages (`#17 <https://github.com/gazebo-release/gz_sim_vendor/issues/17>`_)
-  * Set PYTHONPATH for unversioned packages
-  * Set PYTHONPATH from separate dsv file
+0.0.10 (2026-03-18)
+-------------------
+* Bump version to 8.11.0 (`#24 <https://github.com/gazebo-release/gz_sim_vendor/issues/24>`_)
+  * Bump version to 8.11.0
+  * Fix linter
   ---------
-* Contributors: Carlos Agüero, Jose Luis Rivero, Steve Peters
-
-0.4.1 (2025-09-25)
-------------------
-* Bump version to 10.0.0-pre2 (`#18 <https://github.com/gazebo-release/gz_sim_vendor/issues/18>`_)
 * Contributors: Addisu Z. Taddese
 
-0.4.0 (2025-09-08)
+0.0.9 (2025-10-24)
 ------------------
-* Jetty support: 10.0.0-pre1 (`#14 <https://github.com/gazebo-release/gz_sim_vendor/issues/14>`_)
-* Contributors: Steve Peters
+* Bump version to 8.10.0 (`#21 <https://github.com/gazebo-release/gz_sim_vendor/issues/21>`_)
+* Contributors: Addisu Z. Taddese
 
-0.3.0 (2025-09-04)
+0.0.8 (2025-02-19)
 ------------------
-* Bump version to 9.3.0 (`#13 <https://github.com/gazebo-release/gz_sim_vendor/issues/13>`_)
-* Contributors: Ian Chen
+* Bump version to 8.9.0 (`#8 <https://github.com/gazebo-release/gz_sim_vendor/issues/8>`_)
+* Contributors: Addisu Z. Taddese
 
-0.2.1 (2025-02-19)
+0.0.7 (2025-01-16)
 ------------------
-* Bump version to 9.1.0 (`#9 <https://github.com/gazebo-release/gz_sim_vendor/issues/9>`_)
-* Contributors: Carlos Agüero
+* Bump version to 8.8.0 (`#7 <https://github.com/gazebo-release/gz_sim_vendor/issues/7>`_)
+* Contributors: Addisu Z. Taddese
 
-0.2.0 (2024-09-30)
+0.0.6 (2024-11-08)
 ------------------
-* Bump version to 9.0.0 (`#5 <https://github.com/gazebo-release/gz_sim_vendor/issues/5>`_)
-* Apply prerelease suffix (`#4 <https://github.com/gazebo-release/gz_sim_vendor/issues/4>`_)
-  * Apply prerelease suffix
-  * Drop BUILD_DOCS
-  ---------
-* Upgrade to Ionic
-* Contributors: Addisu Z. Taddese, Ian Chen
+* Bump version to 8.7.0
+* Contributors: Addisu Z. Taddese
 
-0.1.2 (2024-08-08)
+0.0.5 (2024-08-08)
 ------------------
 * Update vendored package version to 8.6.0
 * Contributors: Addisu Z. Taddese
 
-0.1.1 (2024-07-15)
+0.0.4 (2024-07-15)
 ------------------
 * Update vendored package version to 8.5.0
 * Contributors: Addisu Z. Taddese
 
-0.1.0 (2024-04-23)
+0.0.3 (2024-04-25)
 ------------------
 * Use an alias target for root library
 * Contributors: Addisu Z. Taddese
