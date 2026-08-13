@@ -4,7 +4,7 @@ project(gz_sim_vendor)
 
 # Project-specific settings
 set(LIB_VER_MAJOR 8)
-set(LIB_VER_MINOR 14)
+set(LIB_VER_MINOR 15)
 set(LIB_VER_PATCH 0)
 set(LIB_VER_SUFFIX "")
 
