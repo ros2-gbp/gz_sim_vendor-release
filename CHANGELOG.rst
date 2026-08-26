@@ -2,6 +2,11 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.3 (2026-08-25)
+------------------
+* Upgrade to Rotary prerelease (`#37 <https://github.com/gazebo-release/gz_sim_vendor/issues/37>`_)
+* Contributors: Addisu Z. Taddese
+
 0.5.2 (2026-08-05)
 ------------------
 * Bump version to 10.5.0 (`#33 <https://github.com/gazebo-release/gz_sim_vendor/issues/33>`_)
