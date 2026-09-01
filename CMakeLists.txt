@@ -3,17 +3,20 @@ cmake_minimum_required(VERSION 3.10)
 project(gz_sim_vendor)
 
 # Project-specific settings
-set(LIB_VER_MAJOR 11)
-set(LIB_VER_MINOR 0)
+set(LIB_VER_MAJOR 9)
+set(LIB_VER_MINOR 6)
 set(LIB_VER_PATCH 0)
-set(LIB_VER_SUFFIX "-pre1")
+set(LIB_VER_SUFFIX "")
 
 # Derived variables
 set(LIB_NAME gz-sim)
 set(GITHUB_NAME gz-sim)
 string(REPLACE "-" "_" LIB_NAME_UNDERSCORE ${LIB_NAME})
+# Also keep the module name for the shim file (gz.foo becomes just "foo")
+string(REGEX REPLACE "^gz-(.*)$" "\\1" LIB_NAME_PYTHON_MODULE ${LIB_NAME})
 set(LIB_NAME_COMP_PREFIX ${LIB_NAME})
-set(LIB_NAME_FULL gz-sim)
+set(LIB_NAME_FULL gz-sim9)
+string(REPLACE "-" "." LIB_NAME_FULL_PYTHON ${LIB_NAME_FULL})
 set(LIB_VER ${LIB_VER_MAJOR}.${LIB_VER_MINOR}.${LIB_VER_PATCH})
 
 option(VENDOR_FROM_LIB_VCS_REF
@@ -102,8 +105,57 @@ if(NOT ${${LIB_NAME_FULL}_FOUND})
   # See https://github.com/ament/ament_package/issues/145
   file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}.sh "# Dummy .sh file needed for .dsv file to be sourced.")
   ament_environment_hooks("${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}.sh")
-  # environment hook for setting PYTHONPATH
-  ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}_pythonpath.dsv.in")
+endif()
+# environment hook for setting PYTHONPATH
+ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}_pythonpath.dsv.in")
+
+# The goal is to support versionless package names once the user has found the
+# vendor package. Example usage:
+#
+#   find_package(gz_sim_vendor)
+#   find_package(gz-sim VERSION 8.2.0) # Note gz-sim not gz-sim8
+#
+# To accomplish this, we create a `{LIB_NAME}-config.cmake` file that does
+# find_package on the underlying package and sets up CMake targets with the
+# same name as the original targets sans the version number in the target.
+#
+# However, since the vendor package is built with `GLOBAL_HOOK`, we can't
+# install the `-config.cmake` file we're creating here to where the versioned
+# `-config.cmake` from the underlying package is located. If we did, users can
+# `find_package` the versionless package without first finding the vendor
+# package. Thus, we install the `-config.cmake` file to a nonstandard
+# location: `opt/${PROJECT_NAME}/extra_cmake/` and provide a
+# `{vendor_name}-extras.cmake` file that adds that path to `CMAKE_PREFIX_PATH`.
+ament_package(
+  CONFIG_EXTRAS_POST "gz_sim_vendor-extras.cmake.in"
+)
+
+include(CMakePackageConfigHelpers)
+include(GNUInstallDirs)
+
+configure_package_config_file(${LIB_NAME}-config.cmake.in
+  ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config.cmake
+  INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${LIB_NAME})
+
+write_basic_package_version_file(
+  ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config-version.cmake
+  VERSION ${LIB_VER}
+  COMPATIBILITY SameMajorVersion)
+
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config.cmake
+              ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config-version.cmake
+        DESTINATION "opt/${PROJECT_NAME}/extra_cmake/lib/cmake/${LIB_NAME}")
+
+
+# Configure and install the Python shim file
+set(PYTHON_INSTALL_DIR "opt/${PROJECT_NAME}/lib/python")
+if(LIB_NAME MATCHES "^gz-")
+  # gz-* libraries go under gz/ namespace. Note that could be others (like sdformat) not going here
+  string(APPEND PYTHON_INSTALL_DIR "/gz")
 endif()
 
-ament_package()
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/unversioned_shim.py.in
+  ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME_PYTHON_MODULE}.py
+  @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME_PYTHON_MODULE}.py
+  DESTINATION "${PYTHON_INSTALL_DIR}")
