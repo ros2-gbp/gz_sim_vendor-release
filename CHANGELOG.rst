@@ -2,6 +2,14 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.13 (2026-09-03)
+-------------------
+* Enable Python bindings (`#39 <https://github.com/gazebo-release/gz_sim_vendor/issues/39>`_)
+  * Enable Python bindings
+  * Rerun gz_vendor
+  ---------
+* Contributors: Addisu Z. Taddese
+
 0.0.12 (2026-08-13)
 -------------------
 * Bump version to 8.15.0 (`#35 <https://github.com/gazebo-release/gz_sim_vendor/issues/35>`_)
