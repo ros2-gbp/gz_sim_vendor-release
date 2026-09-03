@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.10)
 project(gz_sim_vendor)
 
 # Project-specific settings
-set(LIB_VER_MAJOR 9)
-set(LIB_VER_MINOR 6)
+set(LIB_VER_MAJOR 8)
+set(LIB_VER_MINOR 15)
 set(LIB_VER_PATCH 0)
 set(LIB_VER_SUFFIX "")
 
@@ -12,11 +12,8 @@ set(LIB_VER_SUFFIX "")
 set(LIB_NAME gz-sim)
 set(GITHUB_NAME gz-sim)
 string(REPLACE "-" "_" LIB_NAME_UNDERSCORE ${LIB_NAME})
-# Also keep the module name for the shim file (gz.foo becomes just "foo")
-string(REGEX REPLACE "^gz-(.*)$" "\\1" LIB_NAME_PYTHON_MODULE ${LIB_NAME})
 set(LIB_NAME_COMP_PREFIX ${LIB_NAME})
-set(LIB_NAME_FULL gz-sim9)
-string(REPLACE "-" "." LIB_NAME_FULL_PYTHON ${LIB_NAME_FULL})
+set(LIB_NAME_FULL gz-sim8)
 set(LIB_VER ${LIB_VER_MAJOR}.${LIB_VER_MINOR}.${LIB_VER_PATCH})
 
 option(VENDOR_FROM_LIB_VCS_REF
@@ -68,6 +65,8 @@ ament_vendor(${LIB_NAME_UNDERSCORE}_vendor
   SATISFIED ${${LIB_NAME_FULL}_FOUND}
   VCS_URL https://github.com/gazebosim/${GITHUB_NAME}.git
   VCS_VERSION ${LIB_VCS_VER}
+  CMAKE_ARGS
+    -DBUILD_DOCS:BOOL=OFF
   GLOBAL_HOOK
 )
 
@@ -146,6 +145,9 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config.cmake
               ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config-version.cmake
         DESTINATION "opt/${PROJECT_NAME}/extra_cmake/lib/cmake/${LIB_NAME}")
 
+# Also keep the module name for the shim file (gz.foo becomes just "foo")
+string(REGEX REPLACE "^gz-(.*)$" "\\1" LIB_NAME_PYTHON_MODULE ${LIB_NAME})
+string(REPLACE "-" "." LIB_NAME_FULL_PYTHON ${LIB_NAME_FULL})
 
 # Configure and install the Python shim file
 set(PYTHON_INSTALL_DIR "opt/${PROJECT_NAME}/lib/python")
