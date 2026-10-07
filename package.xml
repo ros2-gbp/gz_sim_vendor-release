@@ -10,14 +10,14 @@
     To avoid any confusion with the version of the vendor package, the major
     version here will always be 0.
   -->
-  <version>0.5.3</version>
+  <version>0.5.4</version>
   <description>
     Vendor package for: gz-sim 11.0.0
 
     Gazebo Sim : A Robotic Simulator
   </description>
   <maintainer email="addisuzt@intrinsic.ai">Addisu Z. Taddese</maintainer>
-  <license>Apache License 2.0</license>
+  <license>Apache-2.0</license>
   <url type="website">https://github.com/gazebosim/gz-sim</url>
 
   <buildtool_depend>ament_cmake_core</buildtool_depend>
