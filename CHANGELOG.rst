@@ -2,33 +2,20 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.5.5 (2026-10-20)
+0.4.7 (2026-11-02)
 ------------------
-* Bump version to 11.0.0~pre3 (`#41 <https://github.com/gazebo-release/gz_sim_vendor/issues/41>`_)
-* Contributors: Addisu Z. Taddese
+* Bump version to 10.6.0 (`#42 <https://github.com/gazebo-release/gz_sim_vendor/issues/42>`_)
+* Contributors: Carlos Agüero
 
-0.5.4 (2026-10-07)
+0.4.6 (2026-08-05)
 ------------------
-* Bump version to 11.0.0~pre2 (`#40 <https://github.com/gazebo-release/gz_sim_vendor/issues/40>`_)
-* Contributors: Addisu Z. Taddese
-
-0.5.3 (2026-08-25)
-------------------
-* Upgrade to Rotary prerelease (`#37 <https://github.com/gazebo-release/gz_sim_vendor/issues/37>`_)
-* Contributors: Addisu Z. Taddese
-
-0.5.2 (2026-08-05)
-------------------
-* Bump version to 10.5.0 (`#33 <https://github.com/gazebo-release/gz_sim_vendor/issues/33>`_)
+* Bump version to 10.5.0 (`#34 <https://github.com/gazebo-release/gz_sim_vendor/issues/34>`_)
 * Contributors: Arjo Chakravarty
 
-0.5.1 (2026-06-10)
+0.4.5 (2026-06-10)
 ------------------
-* Bump version to 10.4.0 (`#29 <https://github.com/gazebo-release/gz_sim_vendor/issues/29>`_)
+* Bump version to 10.4.0 (`#30 <https://github.com/gazebo-release/gz_sim_vendor/issues/30>`_)
 * Contributors: Arjo Chakravarty
-
-0.5.0 (2026-05-14)
-------------------
 
 0.4.4 (2026-02-13)
 ------------------
