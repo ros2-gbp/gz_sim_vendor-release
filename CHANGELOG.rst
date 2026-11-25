@@ -2,6 +2,11 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.6 (2026-11-25)
+------------------
+* Bump version to 9.7.0 (`#44 <https://github.com/gazebo-release/gz_sim_vendor/issues/44>`_)
+* Contributors: Arjo Chakravarty
+
 0.2.5 (2026-08-31)
 ------------------
 * Enable Python bindings (`#38 <https://github.com/gazebo-release/gz_sim_vendor/issues/38>`_)
