@@ -2,60 +2,29 @@
 Changelog for package gz_sim_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.8 (2026-11-18)
+0.2.6 (2026-11-25)
 ------------------
-* Bump version to 10.7.0 (`#43 <https://github.com/gazebo-release/gz_sim_vendor/issues/43>`_)
-* Contributors: Ian Chen
-
-0.4.7 (2026-11-02)
-------------------
-* Bump version to 10.6.0 (`#42 <https://github.com/gazebo-release/gz_sim_vendor/issues/42>`_)
-* Contributors: Carlos Agüero
-
-0.4.6 (2026-08-05)
-------------------
-* Bump version to 10.5.0 (`#34 <https://github.com/gazebo-release/gz_sim_vendor/issues/34>`_)
+* Bump version to 9.7.0 (`#44 <https://github.com/gazebo-release/gz_sim_vendor/issues/44>`_)
 * Contributors: Arjo Chakravarty
 
-0.4.5 (2026-06-10)
+0.2.5 (2026-08-31)
 ------------------
-* Bump version to 10.4.0 (`#30 <https://github.com/gazebo-release/gz_sim_vendor/issues/30>`_)
-* Contributors: Arjo Chakravarty
-
-0.4.4 (2026-02-13)
-------------------
-* Bump version to 10.1.1 (`#23 <https://github.com/gazebo-release/gz_sim_vendor/issues/23>`_)
-* Contributors: Ian Chen
-
-0.4.3 (2026-01-22)
-------------------
-* Bump version to 10.1.0 (`#22 <https://github.com/gazebo-release/gz_sim_vendor/issues/22>`_)
-* Contributors: Ian Chen
-
-0.4.2 (2025-10-01)
-------------------
-* Merge pull request `#19 <https://github.com/gazebo-release/gz_sim_vendor/issues/19>`_ from gazebo-release/releasepy/rolling/10.0.0
-  Bump version to 10.0.0
-* Bump version to 10.0.0
-* Set PYTHONPATH for Jetty packages (`#17 <https://github.com/gazebo-release/gz_sim_vendor/issues/17>`_)
-  * Set PYTHONPATH for unversioned packages
-  * Set PYTHONPATH from separate dsv file
-  ---------
-* Contributors: Carlos Agüero, Jose Luis Rivero, Steve Peters
-
-0.4.1 (2025-09-25)
-------------------
-* Bump version to 10.0.0-pre2 (`#18 <https://github.com/gazebo-release/gz_sim_vendor/issues/18>`_)
+* Enable Python bindings (`#38 <https://github.com/gazebo-release/gz_sim_vendor/issues/38>`_)
 * Contributors: Addisu Z. Taddese
 
-0.4.0 (2025-09-08)
+0.2.4 (2026-08-13)
 ------------------
-* Jetty support: 10.0.0-pre1 (`#14 <https://github.com/gazebo-release/gz_sim_vendor/issues/14>`_)
-* Contributors: Steve Peters
+* Bump version to 9.6.0 (`#36 <https://github.com/gazebo-release/gz_sim_vendor/issues/36>`_)
+* Contributors: Arjo Chakravarty
 
-0.3.0 (2025-09-04)
+0.2.3 (2025-10-24)
 ------------------
-* Bump version to 9.3.0 (`#13 <https://github.com/gazebo-release/gz_sim_vendor/issues/13>`_)
+* Bump version to 9.5.0 (`#20 <https://github.com/gazebo-release/gz_sim_vendor/issues/20>`_)
+* Contributors: Addisu Z. Taddese
+
+0.2.2 (2025-09-24)
+------------------
+* Bump version to 9.4.0 (`#15 <https://github.com/gazebo-release/gz_sim_vendor/issues/15>`_)
 * Contributors: Ian Chen
 
 0.2.1 (2025-02-19)
